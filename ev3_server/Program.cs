@@ -153,7 +153,7 @@ namespace ev3_server
     {
         public static Brick brick;
 
-        public static String myLock = "1";
+        public static String myLock = "0";
 
         public static async void Unlock() {
             await Task.Delay(60*1000);
