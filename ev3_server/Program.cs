@@ -30,11 +30,6 @@ namespace ev3_server
                 };
 
 
-            Get["/color"] = parameters =>
-            {
-                return Program.brick.Ports[InputPort.One].RawValue.ToString();
-            };
-
             Get["/{apiID}/lock"] = _ =>
             {
                 if (Program.myLock != "0")
